@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Pricing components with toggle</title>
+
+</head>
+
+<body>
+  <section class="container">
+    <div class="header">
+      <h1>Our Pricing</h1>
+      <p><span class="annual">Annually</span>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round" onClick="Switch()"></span>
+        </label>
+        <span class="month">Monthly</span>
+      </p>
+
+    </div>
+    <div class="card">
+
+      <div class="toggle">
+        <p class="level">Basic</p>
+        <p class="monthly"><span class="dollar">&dollar;</span>19.99</p>
+        <p class="annually"><span class="dollar">&dollar;</span><span id="basic">199.99</span></p>
+        <hr>
+        <p class="content">500 GB Storage</p>
+        <hr>
+        <p class="content">2 Users Allowed</p>
+        <hr>
+        <p class="content">Send up to 3 GB</p>
+        <hr>
+        <button class="submit" type="submit">Learn More</button>
+      </div>
+
+      <div class="toggle">
+        <p class="level">Professional</p>
+        <p class="monthly"><span class="dollar">&dollar;</span>24.99</p>
+        <p class="annually"><span class="dollar">&dollar;</span><span id="professional">249.99</span></p>
+        <hr>
+        <p class="content">1 TB Storage</p>
+        <hr>
+        <p class="content">5 Users Allowed</p>
+        <hr>
+        <p class="content">Send up to 10 GB</p>
+        <hr>
+        <button class="submit" type="submit">Learn More</button>
+      </div>
+
+      <div class="toggle">
+        <p class="level">Master</p>
+        <p class="monthly"><span class="dollar">&dollar;</span>39.99</p>
+        <p class="annually"><span class="dollar">&dollar;</span><span id="master">399.99</span></p>
+        <hr>
+        <p class="content">2 TB Storage</p>
+        <hr>
+        <p class="content">10 Users Allowed</p>
+        <hr>
+        <p class="content">Send up to 20 GB</p>
+        <hr>
+        <button class="submit" type="submit">Learn More</button>
+      </div>
+
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/Caspar-Cheng">Caspar Cheng</a>.
+    </div>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
