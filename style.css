@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(245, 240, 252);      
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    background: url(images/bg-top.svg) no-repeat right top, url(images/bg-bottom.svg) no-repeat left bottom;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.toggle {
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    color: rgb(99, 99, 99);
+}
+
+.header h1 {
+    text-align: center;
+    color: rgb(121, 118, 118);
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+.header p {
+    text-align: center;
+    color:rgb(165, 164, 164);
+    margin: 10px;
+    margin-bottom: 40px;
+}
+
+.annual {
+   
+    margin-right: 20px;
+}
+
+.month {
+    margin-left: 20px;
+}
+
+.level {
+    font-size: 20px;
+    margin: 12px;
+}
+
+.dollar {
+    font-size: 30px;
+}
+.annually {
+    font-size: 55px;
+    margin-bottom: 18px;
+    display: block;
+}
+.monthly {
+    font-size: 55px;
+    display: none;
+}
+
+.toggle hr {
+    border: 0.5px solid rgb(216, 215, 215);
+    margin: 10px;
+}
+
+.content {
+    font-size: 12px;
+    margin: 8px;
+}
+
+.submit {
+    width: 240px;
+    height: 35px;
+    margin-top: 16px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, hsl(235, 62%, 80%) , hsl(237, 63%, 64%));
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+.toggle:hover {
+    background: linear-gradient( hsl(236, 62%, 80%) , hsl(237, 63%, 64%));
+    color: white;
+    box-shadow: -4px 15px 15px 0px #c2d7f3;
+    cursor: pointer;
+}
+.submit:hover{
+    color: hsl(237, 63%, 64%);
+    background: white;
+    cursor: pointer;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    transform: translateY(-8px);
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(237, 64%, 66%);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: hsl(234, 84%, 76%);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+.attribution {
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 10px;    
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media only screen and (min-width: 800px){
+
+    .card {
+        flex-direction: row;
+        width: auto;
+        margin-bottom: 50px;
+    }
+
+    .toggle {
+        width: 280px;
+        height: 400px;
+    }
+
+    .toggle:hover {
+        height: 450px;
+    }
+}
